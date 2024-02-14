@@ -17,3 +17,33 @@ body {
   background-color: #fff;
   background-size: cover;
   min-height: 100vh; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FEE5E5;
+  flex-wrap: wrap; }
+  .navbar__logo {
+    display: flex;
+    align-items: center; }
+    .navbar__logo img {
+      display: block;
+      width: auto; }
+  .navbar__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    min-width: 40rem; }
+  .navbar__list-item {
+    text-decoration: none;
+    color: #000;
+    padding: 0 2rem; }
+  .navbar__nav-link:link, .navbar__nav-link:visited {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    transition: all, .2s; }
+  .navbar__nav-link:hover, .navbar__nav-link:active {
+    color: #ED4A4A; }
