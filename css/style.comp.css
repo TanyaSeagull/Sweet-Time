@@ -17,3 +17,53 @@ body {
   background-color: #fff;
   background-size: cover;
   min-height: 100vh; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FEE5E5;
+  flex-wrap: wrap;
+  padding: 3rem 10rem; }
+  .navbar__logo {
+    display: flex;
+    align-items: center; }
+    .navbar__logo img {
+      display: block;
+      width: auto; }
+  .navbar__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    min-width: 40rem; }
+  .navbar__list-item {
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+    padding: 0 2rem; }
+  .navbar__list-link:link, .navbar__list-link:visited {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    transition: all, .2s; }
+  .navbar__list-link:hover, .navbar__list-link:active {
+    color: #ED4A4A; }
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.6rem 4.2rem;
+  cursor: pointer;
+  outline: none; }
+  .btn--light {
+    background-color: #fff5f5;
+    color: #000; }

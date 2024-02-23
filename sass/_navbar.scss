@@ -4,11 +4,11 @@
     justify-content: space-between;
     background: $color-primary;
     flex-wrap: wrap;
+    padding: 3rem 10rem;
 
     &__logo {
         display: flex;
         align-items: center;
-
         img {
             display: block;
             width: auto;
@@ -21,24 +21,30 @@
         align-items: center;
         height: 5rem;
         min-width: 40rem;
-
     }
 
-     &__list-item {
+    &__list-item {
+        list-style: none;
         text-decoration: none;
+        outline: none;
         color: $color-black;
+        font-size: 16px;
         padding: 0 2rem;
-     }
+    }
 
-     &__nav-link:link,
-    &__nav-link:visited {
+    &__list-link:link,
+    &__list-link:visited {
         text-decoration: none;
         color: $color-black;
         outline: none;
         transition: all, .2s;
     }
-    &__nav-link:hover,
-    &__nav-link:active {
+    &__list-link:hover,
+    &__list-link:active {
         color: $color-pink-3;
+    }
+
+    &__btn {
+        
     }
 }
