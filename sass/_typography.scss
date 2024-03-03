@@ -51,4 +51,22 @@ h1 {
     color: $color-black;
 }
 
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    color: $color-black;
+}
+
+//Berries//
+.berry {
+    position: relative;
+
+    &__strawberry {
+        display: block;
+        position: absolute;
+        transform: translate(150%, -120%);
+    }
+}
 
