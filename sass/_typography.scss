@@ -11,9 +11,17 @@
     cursor: pointer;
     outline: none;
 
-    &__link:link,
-    &__link:visited {
+    &__link--light:link,
+    &__link--light:visited {
         text-decoration: none;
+        outline: none;
+        color: $color-black;
+    }
+
+    &__link--dark:link,
+    &__link--dark:visited {
+        text-decoration: none;
+        color: $color-white;
         outline: none;
     }
 
@@ -39,6 +47,32 @@
         &:active {
             transform: translateY(.4rem);
         }
+    }
+
+    &--pink {
+        background: linear-gradient(180deg, #FA5959 0%, #FA5959 100%);
+        color: $color-white;
+        box-shadow: 0px 3px 4px rgba(235, 87, 87, 0.3);
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            transform: translateY(-.3rem);
+            box-shadow: 0px 4px 4px rgba(235, 87, 87, 0.7);
+        }
+    }
+
+    &--small {
+        background-color: $color-white;
+        border: 1px solid $color-pink-1;
+        color: $color-pink-1;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 2rem;
+        text-transform: none;
+        padding: .5rem 1.1rem;
+        margin: 0 1rem;
     }
 }
 
@@ -67,6 +101,14 @@ h2 {
         display: block;
         position: absolute;
         transform: translate(150%, -120%);
+    }
+
+    &__blueberry {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translate(-25rem, -10%);
+        max-width: 7vw;
     }
 }
 

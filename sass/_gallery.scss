@@ -1,7 +1,7 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 7rem;
+    grid-row-gap: 7rem;
     justify-items: center;
     align-items: center;
     margin: 4rem 10rem;
@@ -60,6 +60,6 @@
 
     &__btn {
         grid-column: 1 / -1;
-        grid-row: 4 / 5;
+        grid-row: 5 / 5;
     }
 }

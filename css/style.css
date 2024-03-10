@@ -22,7 +22,7 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 7rem;
+  grid-row-gap: 7rem;
   justify-items: center;
   align-items: center;
   margin: 4rem 10rem; }
@@ -62,7 +62,7 @@ body {
       padding-bottom: 3rem; }
   .gallery__btn {
     grid-column: 1 / -1;
-    grid-row: 4 / 5; }
+    grid-row: 5 / 5; }
 
 .header {
   margin-bottom: 112px;
@@ -140,8 +140,13 @@ body {
   padding: 1.6rem 4.2rem;
   cursor: pointer;
   outline: none; }
-  .btn__link:link, .btn__link:visited {
+  .btn__link--light:link, .btn__link--light:visited {
     text-decoration: none;
+    outline: none;
+    color: #000; }
+  .btn__link--dark:link, .btn__link--dark:visited {
+    text-decoration: none;
+    color: #fff;
     outline: none; }
   .btn--light {
     background-color: #fff5f5;
@@ -157,6 +162,25 @@ body {
     transition: all .2s; }
     .btn--dark:hover, .btn--dark:active {
       transform: translateY(0.4rem); }
+  .btn--pink {
+    background: linear-gradient(180deg, #FA5959 0%, #FA5959 100%);
+    color: #fff;
+    box-shadow: 0px 3px 4px rgba(235, 87, 87, 0.3);
+    transition: all .2s; }
+    .btn--pink:hover, .btn--pink:active {
+      transform: translateY(-0.3rem);
+      box-shadow: 0px 4px 4px rgba(235, 87, 87, 0.7); }
+  .btn--small {
+    background-color: #fff;
+    border: 1px solid #FA5959;
+    color: #FA5959;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2rem;
+    text-transform: none;
+    padding: .5rem 1.1rem;
+    margin: 0 1rem; }
 
 h1 {
   font-size: 3.6rem;
@@ -178,3 +202,9 @@ h2 {
     display: block;
     position: absolute;
     transform: translate(150%, -120%); }
+  .berry__blueberry {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: translate(-25rem, -10%);
+    max-width: 7vw; }
