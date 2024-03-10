@@ -93,6 +93,25 @@ h2 {
     color: $color-black;
 }
 
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.06em;
+    color: $color-black;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.04em;
+    color: $color-black;
+}
+
 //Berries//
 .berry {
     position: relative;
