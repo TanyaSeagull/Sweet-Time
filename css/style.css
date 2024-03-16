@@ -38,6 +38,27 @@ body {
     grid-template-rows: repeat(3, min-content);
     row-gap: 1.8rem; }
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 5rem;
+  margin: 10rem; }
+  .features .table {
+    box-shadow: 4px 4px 4px rgba(252, 214, 214, 0.1), inset 4px 4px 4px rgba(251, 232, 232, 0.1);
+    border-radius: 12px;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 20% 4rem 20%; }
+    .features .table__icon {
+      height: 6rem;
+      width: 6rem; }
+    .features .table__p {
+      text-align: center;
+      font-size: 16px; }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -244,3 +265,9 @@ h4 {
     right: 0;
     transform: translate(-25rem, -10%);
     max-width: 7vw; }
+  .berry__raspberry {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: translate(-350%, -10%);
+    max-width: 10vw; }

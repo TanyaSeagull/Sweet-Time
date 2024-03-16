@@ -1,0 +1,29 @@
+.features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5rem;
+    margin: 10rem;
+
+    .table{
+        box-shadow: 4px 4px 4px rgba(252, 214, 214, 0.1), inset 4px 4px 4px rgba(251, 232, 232, 0.1);
+        border-radius: 12px;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 20% 4rem 20%;
+
+        &__icon {
+            height: 6rem;
+            width: 6rem;
+            
+        }
+
+        &__p {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+
