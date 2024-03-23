@@ -116,13 +116,13 @@ h4 {
 .berry {
     position: relative;
 
-    &__strawberry {
+    &__1 {
         display: block;
         position: absolute;
         transform: translate(150%, -120%);
     }
 
-    &__blueberry {
+    &__2 {
         display: block;
         position: absolute;
         right: 0;
@@ -130,11 +130,23 @@ h4 {
         max-width: 7vw;
     }
 
-    &__raspberry {
+    &__3 {
         display: block;
         position: absolute;
         right: 0;
         transform: translate(-350%, -10%);
+        max-width: 10vw;
+    }
+
+    &__4 {
+        display: block;
+        position: absolute;
+    }
+
+    &__5 {
+        display: block;
+        position: absolute;
+        right: 0;
         max-width: 10vw;
     }
 }
