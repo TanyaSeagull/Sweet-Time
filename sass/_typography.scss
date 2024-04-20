@@ -86,10 +86,9 @@ h1 {
 }
 
 h2 {
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 37px;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.6rem;
     letter-spacing: 0.06em;
     color: $color-black;
 }
@@ -124,8 +123,8 @@ h4 {
         display: block;
         position: absolute;
         right: 0;
-        transform: translate(-25rem, -10%);
-        max-width: 7vw;
+        transform: translate(-28rem, -20%);
+        max-width: 8vw;
     }
 
     &__3 {

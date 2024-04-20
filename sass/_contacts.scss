@@ -1,68 +1,77 @@
 .contacts {
     background: linear-gradient(0deg, rgba(255, 229, 229, 1), rgba(255, 229, 229, 1) 95%, rgba(255, 229, 229, 0) 100%);
-    padding: 2rem 0 0 10rem;
-    margin-bottom: 7rem;
-    display: grid;
-    grid-template-rows: repeat(5, min-content);
-    grid-template-columns: repeat(2, minmax(20vw, min-content)) 40vw;
-    grid-row-gap: 3rem;
-    align-items: end;
-    justify-items: start;
+    padding: 10rem 15rem;
     overflow: hidden;
 
-    &__h2 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
 
-    &__info {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+    .contact {
+        background: $color-white;
+        box-shadow: 0 0 2px 4px rgba(236, 214, 214, 0.4);
+        border-radius: 15px;
         display: grid;
-        grid-template-columns: repeat(2, max-content);
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-        justify-items: start;
+        grid-template-columns: minmax(50, 1fr) minmax(0, 1fr) ;
+        grid-template-rows: repeat(3, min-content);
         align-items: center;
-    }
+        justify-items: start;
+        padding: 5rem 6rem 0 8rem;
 
-    &__btn {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
+
+        &__h2 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &__info {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-column-gap: 1rem;
+            grid-row-gap: 2rem;
+            justify-items: start;
+            align-items: center;
+        }
+
+        &__icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: $color-pink-1;
+        }
+
+        &__btn {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
     }
 
     &__img--main {
-        width: 100rem;
+        width: 80%;
         grid-column: 2 / 3;
         grid-row: 1 / -1;
-        transform: translate(50%, -110%);
+        transform: scale(1.2) translateY(-5%);
         justify-self: end;
-        margin-right: 3rem;
-
-        height: auto;
-
-
+        margin-right: 10rem;
     }
 
     &__img--1 {
-        width: 20rem;
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-        transform: translate(200%, 40%);
+        width: 12rem;
+        transform: translate(180%) scale(-1, 1);
+        
 
     }
 
     &__img--2 {
-        width: 10rem;
-        grid-column: 3 / 4;
+        width: 20rem;
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
+        transform: translate(200%, 40%);
        
     }
 
     &__img--3 {
         width: 10rem;
         grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        transform: translateX(80%);
+        grid-row: 3 / 4;
+        transform: translate(120%);
     }
 }
