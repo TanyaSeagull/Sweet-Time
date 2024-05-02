@@ -155,31 +155,3 @@ h4 {
         left: 5rem;
     }
 }
-
-figcaption {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    height: auto;
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: $color-grey;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $color-white;
-
-    transform: translateY(100%);
-    transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.fig--small {
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
-

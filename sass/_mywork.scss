@@ -1,11 +1,10 @@
 .mywork {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    
-    grid-gap: calc(((100vw - 20rem)/5)/6);
-    
-    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
     justify-items: center;
+    justify-content: center;
     margin: 0 10rem;
 
 
@@ -31,11 +30,66 @@
         width: 100%;
         height: 100%;
         display: block;
+
     }
 
     &__btn {
         grid-column: 1 / -1;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 }
 
+figure {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        transition: 0.3s;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+figcaption {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        height: auto;
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: $color-grey;
+        text-align: center;
+        color: $color-white;
+    
+        transform: translateY(100%);
+        transition: transform 0.3s, opacity 0.1s 0.3s;
+    
+        @media only screen and (max-width: 37.5em) {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        @media only screen and (max-width: 37.5em) {
+            opacity: 0;
+        }
+}
+    
+.fig--small {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    
+        @media only screen and (max-width: 37.5em) {
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
+}
+    
+figure:hover figcaption {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 0.3s, opacity 0.1s;
+}

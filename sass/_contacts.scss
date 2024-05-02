@@ -1,6 +1,6 @@
 .contacts {
     background: linear-gradient(0deg, rgba(255, 229, 229, 1), rgba(255, 229, 229, 1) 95%, rgba(255, 229, 229, 0) 100%);
-    padding: 10rem 15rem;
+    padding: 10rem 15rem 5rem 15rem;
     overflow: hidden;
 
 
@@ -15,6 +15,10 @@
         justify-items: start;
         padding: 5rem 6rem 0 8rem;
 
+        a {
+            text-decoration: none;
+            color: $color-black;
+        }
 
         &__h2 {
             grid-column: 1 / 2;
