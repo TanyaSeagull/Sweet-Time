@@ -117,6 +117,10 @@ h4 {
         display: block;
         position: absolute;
         transform: translate(150%, -120%);
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     &__2 {
@@ -125,6 +129,10 @@ h4 {
         right: 0;
         transform: translate(-28rem, -20%);
         max-width: 8vw;
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     &__3 {
@@ -133,11 +141,19 @@ h4 {
         right: 0;
         transform: translate(-350%, -10%);
         max-width: 10vw;
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     &__4 {
         display: block;
         position: absolute;
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     &__5 {
@@ -145,6 +161,10 @@ h4 {
         position: absolute;
         right: 0;
         max-width: 10vw;
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     &--6 {
@@ -153,5 +173,9 @@ h4 {
         width: 25rem;
         transform: translate(0, -290px);
         left: 5rem;
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 }

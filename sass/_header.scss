@@ -10,14 +10,34 @@
     justify-items: start;
     overflow: hidden;
 
+    @media only screen and (max-width: 800px) {
+        padding: 2rem 5rem 0 5rem;
+        grid-template-columns: minmax(50vw, min-content) 30vw;
+    }
+
+
     h1 {
         grid-column: 1 / span 2;
         grid-row: 2 / 3;
+
+        @media only screen and (max-width: 800px) {
+            grid-column: 1 / 2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+        }
     }
 
     p {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+
+        @media only screen and (max-width: 600px) {
+            grid-row: 2 / 3;
+            padding-right: 10rem;
+        }
     }
 
     &__btn {
@@ -35,6 +55,14 @@
 
         @media only screen and (max-width: 800px) {
             grid-column: 2 / 3;
+        }
+
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+            justify-self: flex-end;
+            transform: translateY(0);
         }
     }
 }
