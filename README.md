@@ -1,10 +1,10 @@
-# Sweet Time - Кондитерская веб-страница
+# Sweet Time - Patisserie Website
 
 ![Sweet Time Preview](img/preview.jpg)
 
-Веб-страница для кондитерской "Sweet Time", специализирующейся на авторских десертах. Адаптивный лендинг с галереей работ, информацией о мастере и секцией отзывов.
+A responsive landing page for "Sweet Time" patisserie specializing in artisanal desserts. Features a gallery of confectionery works, information about the master pastry chef, and customer testimonials section.
 
-## Контакты
+## Contacts
 
-🛠 **Разработка:** [Татьяна Seagull](https://github.com/TanyaSeagull)  
-🎨 **Дизайн:** [Ольга Шестакова](https://www.behance.net/olgashesta1041)
+🛠 **Development:** [Tanya Seagull](https://github.com/TanyaSeagull)  
+🎨 **Design:** [Olga Shestakova](https://www.behance.net/olgashesta1041)
