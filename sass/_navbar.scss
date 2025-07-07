@@ -28,6 +28,9 @@
 
         @media only screen and (max-width: 1000px) {
             display: none;
+            &--mobile {
+                display: flex; // Показать в бургер-меню
+            }
         }
     }
 
