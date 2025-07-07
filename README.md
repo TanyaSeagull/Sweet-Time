@@ -1,4 +1,9 @@
-# Sweet-Time
- Landing page for homemade deserts.
- Front-end only
+# Sweet Time - Кондитерская веб-страница
 
+![Sweet Time Preview](img/preview.jpg)
+
+Веб-страница для кондитерской "Sweet Time", специализирующейся на авторских десертах. Адаптивный лендинг с галереей работ, информацией о мастере и секцией отзывов.
+
+Контакты
+Автор вёрстки: Татьяна Seagull
+Дизайн: Ольга Шестакова https://www.behance.net/olgashesta1041
